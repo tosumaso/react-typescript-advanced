@@ -7,10 +7,10 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+//react18とreact-router-dom5は不具合を起こす。root.render()の<React.Strict>タグを削除する
 root.render(
-  <React.StrictMode>
     <App />
-  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
