@@ -15,3 +15,8 @@ export const Text: FC<Props> = (props) => {
   {/* reactのstyleはプロパティと値が同じなら値を省略できる。例: fontSize: fontSize */}
   return <p style={{color,fontSize}}>テキストです</p>
 }
+
+export const Text2 = (props: Props) => {
+  const {color,fontSize} = props;
+  return <p style={{color,fontSize}}>テキストです</p>
+}
